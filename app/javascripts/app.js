@@ -1,4 +1,6 @@
-Store.new({ from: web3.eth.coinbase })
+web3.eth.defaultAccount = web3.eth.coinbase;
+
+Store.new()
 .then( function( instance ){
   return instance.query();
 }).then(function( v ){
