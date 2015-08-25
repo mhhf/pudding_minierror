@@ -2,7 +2,7 @@ contract Store {
   uint value;
 
   function Store(){
-    value = 42;
+    value = 0;
   }
   
   function setValue ( uint v ) {
